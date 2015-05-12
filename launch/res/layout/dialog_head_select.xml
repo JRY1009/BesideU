@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/btn_head_select_local"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="5dp"
+        android:text="本地相册"
+        android:textSize="18sp"
+        android:textColor="@color/white"
+        android:background="@drawable/btn_common" />
+
+    <Button
+        android:id="@+id/btn_head_select_carema"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="5dp"
+        android:text="相机拍照"
+        android:textSize="18sp"
+        android:textColor="@color/white"
+        android:background="@drawable/btn_common" />
+
+    <Button
+        android:id="@+id/btn_head_select_cancle"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="5dp"
+        android:text="取消"
+        android:textSize="18sp"
+        android:textColor="@color/white"
+        android:background="@drawable/btn_common" />
+
+</LinearLayout>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F5"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/tab_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/txt_talk"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:padding="8dip"
+            android:tag="0"
+            android:text="身边聊"
+            android:textColor="@color/green"
+            android:textSize="15dip" />
+
+        <TextView
+            android:id="@+id/txt_group"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:padding="8dip"
+            android:tag="1"
+            android:text="身边群"
+            android:textColor="@color/black"
+            android:textSize="15dip" />
+
+        <TextView
+            android:id="@+id/txt_popular"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:padding="8dip"
+            android:tag="2"
+            android:text="有缘人"
+            android:textColor="@color/black"
+            android:textSize="15dip" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/iv_bottom_line"
+            android:layout_width="86dip"
+            android:layout_height="2dip"
+            android:layout_marginLeft="11dip"
+            android:scaleType="matrix"
+            android:src="#0f0" />
+    </LinearLayout>
+
+</LinearLayout>

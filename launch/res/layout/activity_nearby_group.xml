@@ -1,0 +1,68 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/rl_nearby_group_title"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:background="@color/darkgreen"
+        android:gravity="center_vertical" >
+
+        <ImageView
+            android:id="@+id/img_nearby_group_back"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:onClick="onNearbyGroupBack"
+            android:src="@drawable/btn_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/img_nearby_group_back"
+            android:text="附近群组"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/btn_nb_next_page"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/chat_send_btn"
+            android:onClick="onNextPage"
+            android:text="下一页"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/btn_nb_prev_page"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:layout_toLeftOf="@id/btn_nb_next_page"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/chat_send_btn"
+            android:onClick="onPrevPage"
+            android:text="上一页"
+            android:textColor="@color/white" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/lv_nearby_group"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/rl_nearby_group_title"
+        android:cacheColorHint="#00000000"
+        android:divider="@null"
+        android:fadingEdge="none"
+        android:fadingEdgeLength="0dp"
+        android:listSelector="#00000000"
+        android:scrollbarStyle="outsideOverlay" />
+
+</LinearLayout>

@@ -1,0 +1,139 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/rl_mapview_title"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:background="@color/darkgreen"
+        android:gravity="center_vertical" >
+
+        <ImageView
+            android:id="@+id/img_mapview_back"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:onClick="onMapViewBack"
+            android:src="@drawable/btn_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/img_mapview_back"
+            android:text="搜索地点"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/btn_mv_next_page"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/chat_send_btn"
+            android:onClick="onNextPage"
+            android:text="下一页"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/btn_mv_prev_page"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:layout_toLeftOf="@id/btn_mv_next_page"
+            android:background="@drawable/chat_send_btn"
+            android:onClick="onPrevPage"
+            android:text="上一页"
+            android:textColor="@color/white" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/ll_mv_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/gray" />
+
+        <Button
+            android:id="@+id/btn_mv_search"
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/chat_send_btn"
+            android:onClick="OnMapViewSearch"
+            android:text="搜索"
+            android:textColor="@color/white" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="2dp"
+            android:layout_marginTop="5dp"
+            android:layout_toLeftOf="@id/btn_mv_search"
+            android:background="@drawable/input_bar_bg_active" >
+
+            <EditText
+                android:id="@+id/et_mv_search"
+                android:layout_width="fill_parent"
+                android:layout_height="35dp"
+                android:layout_centerVertical="true"
+                android:background="@color/white"
+                android:singleLine="true"
+                android:textSize="15sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@id/ll_mv_bottom"
+        android:layout_below="@id/rl_mapview_title"
+        android:gravity="center_vertical" >
+
+        <com.amap.api.maps2d.MapView
+            android:id="@+id/map_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <Button
+            android:id="@+id/btn_mapview_locate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/map_btn_fix"
+            android:onClick="OnMapViewLocate" />
+
+        <Button
+            android:id="@+id/btn_mapview_refresh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/btn_mapview_locate"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/map_btn_refresh"
+            android:onClick="OnMapViewRefresh" />
+    </RelativeLayout>
+
+</RelativeLayout>

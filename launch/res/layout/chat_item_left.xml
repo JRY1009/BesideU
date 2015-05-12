@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="6dp" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/txt_chat_sendtime"
+            style="@style/chat_text_date_style2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        </TextView>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp" >
+
+        <ImageView
+            android:id="@+id/img_userhead"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/head_default"
+            android:clickable="true" >
+        </ImageView>
+
+        <TextView
+            android:id="@+id/txt_username"
+            style="@style/chat_text_name_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/img_userhead" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/txt_chatcontent"
+            style="@style/chat_text_content_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txt_username"
+            android:layout_marginTop="2dp"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/img_userhead"
+            android:background="@drawable/chatfrom_bg"
+            android:autoLink="email|phone|web">
+        </TextView>
+
+        <ImageView
+            android:id="@+id/img_chatcontent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txt_username"
+            android:layout_marginTop="2dp"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/img_userhead"
+            android:background="@drawable/chatfrom_pic"
+            android:visibility="gone" >
+        </ImageView>
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">身边</string>
+    <string name="antion_share">发送到身边</string>
+    <string name="action_quit">退出</string>
+    <string name="action_settings">设置</string>
+    <string name="basic_map">地图视角</string>
+    <string name="txt_send">发送</string>
+    <string name="txt_modify">修改</string>
+    <string name="share_url">http://www.imshenbian.com</string>
+    <string name="share_descript">和我一起玩身边吧，最简最酷的聊天工具！</string>
+    <string name="share_descript2">和我一起在[身边]玩吧！不用注册，不用申请加入，随时随地享受和身边的人聊天吧。诚心推荐！点击这里赶快装上吧！http://www.imshenbian.com</string>
+
+
+</resources>

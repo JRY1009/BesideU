@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/dark_bkg"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/txt_relocate"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:text="重新定位"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+
+    <RelativeLayout
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/setting_line" >
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/txt_mapview"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:text="搜索地点"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+
+    <RelativeLayout
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/setting_line" >
+    </RelativeLayout>
+    
+    <TextView
+        android:id="@+id/txt_nearby_group"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:text="附近群组"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+    
+</LinearLayout>

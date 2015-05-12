@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white" >
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray" />
+
+    <LinearLayout
+        android:id="@+id/ll_bottom_panel"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <RelativeLayout
+            android:id="@+id/rl_bottom_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dip"
+            android:layout_marginTop="2dip" >
+
+            <RelativeLayout
+                android:id="@+id/rl_bottom_rbtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dp" >
+
+                <ImageView
+                    android:id="@+id/img_element"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="5dp"
+                    android:src="@drawable/chatting_setmode_element_btn" />
+
+                <Button
+                    android:id="@+id/btn_send"
+                    android:layout_width="45dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/chat_send_btn"
+                    android:text="@string/txt_send"
+                    android:textColor="@color/white"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_bottom_ledit"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="2dp"
+                android:layout_toLeftOf="@id/rl_bottom_rbtn"
+                android:background="@drawable/input_bar_bg_active" >
+
+                <ImageView
+                    android:id="@+id/img_face"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/chatting_setmode_face_btn"
+                    android:paddingLeft="5dp" />
+
+                <EditText
+                    android:id="@+id/et_sendmessage"
+                    android:layout_width="fill_parent"
+                    android:layout_height="35dp"
+                    android:layout_toLeftOf="@id/img_face"
+                    android:layout_centerVertical="true"
+                    android:background="@color/white"
+                    android:singleLine="true"
+                    android:textSize="15sp" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/vline"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/ll_bottom_panel"
+        android:background="#d3d3d3" />
+
+    <RelativeLayout
+        android:id="@+id/rl_fragment_content"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/vline"
+        android:visibility="gone" >
+    </RelativeLayout>
+
+</RelativeLayout>

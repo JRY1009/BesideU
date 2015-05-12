@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:background="@color/white" >
+
+        <view
+            android:id="@+id/view_modify_avatar_image"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            class="com.besideu.source.ctrl.CropImageView" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_modify_avatar_bottom"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:orientation="horizontal"
+        android:padding="2dp" >
+
+        <Button
+            android:id="@+id/btn_modify_avatar_rotate_left"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/rotate_left" />
+
+        <Button
+            android:id="@+id/btn_modify_avatar_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+          	android:layout_weight="1"
+            android:background="@drawable/chat_send_btn"
+            android:text="取消" />
+
+        <Button
+            android:id="@+id/btn_modify_avatar_save"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/chat_send_btn"
+            android:text="保存" />
+
+        <Button
+            android:id="@+id/btn_modify_avatar_rotate_right"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/rotate_right" />
+    </LinearLayout>
+
+</LinearLayout>

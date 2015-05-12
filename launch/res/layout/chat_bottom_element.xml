@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_element"
+    android:layout_width="fill_parent"
+    android:layout_height="180dp"
+    android:background="@color/white" >
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|center_vertical|clip_horizontal" >
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp" >
+
+                <ImageView
+                    android:id="@+id/img_picture"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/btn_local_picture" />
+
+	            <TextView
+	                android:id="@+id/txt_location"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_below="@id/img_picture"
+	                android:text="图片"
+	                android:textSize="16dp"
+	                android:textColor="#000"
+	                android:layout_centerHorizontal="true" />
+			</RelativeLayout>
+                
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="5dp">
+
+                <ImageView
+                    android:id="@+id/img_camera"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/btn_carema" />
+                
+	            <TextView
+	                android:id="@+id/txt_carema"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_below="@id/img_camera"
+	                android:text="拍照"
+	                android:textSize="16dp"
+	                android:textColor="#000"
+	                android:layout_centerHorizontal="true" />
+            </RelativeLayout>
+                
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

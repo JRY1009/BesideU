@@ -1,0 +1,56 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity" >
+
+    <LinearLayout
+        android:id="@+id/layout_title"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical" >
+
+        <include layout="@layout/title_bar" />
+
+        <!-- include layout="@layout/tab_bar" / -->
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layout_title"
+        android:layout_gravity="bottom"
+        android:background="@color/white"
+        android:focusable="true"
+        android:focusableInTouchMode="true" >
+
+        <!-- 底部按钮以及 编辑框 -->
+
+        <LinearLayout
+            android:id="@+id/ll_chat_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true" >
+
+            <include layout="@layout/chat_bottom" />
+        </LinearLayout>
+
+        <!-- 聊天内容 listview -->
+
+        <com.besideu.source.ctrl.PullToRefreshListView
+            android:id="@+id/listview"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/ll_chat_bottom"
+            android:layout_alignParentTop="true"
+            android:cacheColorHint="#00000000"
+            android:divider="@null"
+            android:fadingEdge="none"
+            android:fadingEdgeLength="0dp"
+            android:listSelector="#00000000"
+            android:scrollbarStyle="outsideOverlay" />
+    </RelativeLayout>
+
+</RelativeLayout>
